@@ -13,7 +13,7 @@ from time import sleep
 
 # These lines check if the code is being executed on an EV3
 # If not, dummy files are generated in the local directory,
-# so that the code can run on the EV3 even though there are
+# so that the code can run on the PC even though there are
 # no motors or sensors.
 from ev3devlight.fileio import real_robot
 if not real_robot():
