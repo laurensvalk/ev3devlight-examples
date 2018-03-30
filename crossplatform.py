@@ -9,6 +9,7 @@ Anything related to the EV3 hardware is effectively ignored.
 """
 # Regular imports for our robot
 from ev3devlight.motors import DriveBase
+from ev3devlight.brick import Battery
 from time import sleep
 
 # These lines check if the code is being executed on an EV3
@@ -19,6 +20,10 @@ from ev3devlight.fileio import real_robot
 if not real_robot():
     from ev3devlight.virtualhardware import make_files
     make_files()
+
+
+supply = Battery()
+print(supply.voltage)
 
 # Set up a drivebase from two motors
 base = DriveBase(left_port='outB',
