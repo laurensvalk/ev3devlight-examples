@@ -7,7 +7,7 @@ from time import sleep
 import sys
 sys.path.append('/home/robot/.micropython/lib/ev3devlight')
 
-from ev3devlight.motor import Touch
+from ev3devlight.sensors import Touch
 
 # Set up Touch Sensor to detect objects
 button = Touch('in1')

@@ -16,7 +16,7 @@ while not eyes.detected:
     print_vscode(gyro.rate)
     sleep(0.1)
 
-print_vscode("Press IR button to end program")  
+print_vscode("Press IR button to end program")
 
 # Set infrared sensor in remote mode
 commander = Remote('in4')
